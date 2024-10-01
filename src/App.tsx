@@ -170,6 +170,7 @@ const App: React.FC = () => {
   );
   const [numberOfAnswers, setNumberOfAnswers] = useState<number>(0);
   const [correctAnswerCount, setCorrectAnswerCount] = useState<number>(0); // Track correct answers
+  const [notHadFirstGuess, setNotHadFirstGuess] = useState<boolean>(true);
 
   // Fetch country data from the JSON file when the component mounts
   useEffect(() => {
@@ -188,6 +189,7 @@ const App: React.FC = () => {
   }, []);
 
   const generateChallenge = (): void => {
+    setNotHadFirstGuess(true);
     let validChallenge: Challenge | null = null;
     let matchingCountries: string[] = [];
     paramReducer = null; // Reset paramReducer before generating a new challenge
@@ -298,16 +300,19 @@ const App: React.FC = () => {
   });
   const handleSubmit = (event: any) => {
     event.preventDefault();
+    setNotHadFirstGuess(false);
     const input: string = event.currentTarget.querySelector("input").value;
 
     if (answers.includes(input)) {
+      setCorrectAnswer(true);
       setCorrectAnswerCount((prev) => prev + 1); // Increment correct answer count
       const updatedAnswers = answers.filter((answer) => answer !== input);
       setAnswers(updatedAnswers);
-      event.currentTarget.querySelector("input").value = "";
     } else {
       setAnswersImage("../public/cross.png"); // Only change this if needed
+      setCorrectAnswer(false);
     }
+    event.currentTarget.querySelector("input").value = "";
     console.log(answers);
   };
   return (
@@ -331,7 +336,7 @@ const App: React.FC = () => {
               ? `${challenge.slice(0, -1)} and ${addedText.join(" and ")}`
               : challenge}
           </h2>
-          {correctAnswer === null ? (
+          {notHadFirstGuess ? (
             <p></p>
           ) : correctAnswer === true ? (
             <p>Correct Answer: Countries remaing = {answers.length}</p>
