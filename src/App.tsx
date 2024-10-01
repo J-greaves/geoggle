@@ -20,7 +20,6 @@ interface CountryData {
   [key: string]: any; // This allows any additional string keys
 }
 let paramReducer: string | null = null; // Initialize paramReducer as null
-let searcherString: string | null = null; // Similarly for the
 let searcherArray: string[] = [];
 
 const paramReducers: Array<string> = [
@@ -193,7 +192,6 @@ const App: React.FC = () => {
     let validChallenge: Challenge | null = null;
     let matchingCountries: string[] = [];
     paramReducer = null; // Reset paramReducer before generating a new challenge
-    searcherString = null; // Reset searcherString
     setCorrectAnswerCount(0);
 
     const maxAttempts = 100; // Limit to avoid infinite loop
@@ -202,7 +200,6 @@ const App: React.FC = () => {
     do {
       searcherArray = [];
       paramReducer = null;
-      searcherString = null;
       if (attempt >= maxAttempts) {
         console.warn("Max attempts reached, no valid challenge found.");
         return; // Prevents infinite loop
@@ -235,7 +232,6 @@ const App: React.FC = () => {
         // If after applying paramReducer we get fewer than 2 countries, reset and retry
         if (matchingCountries.length < 2) {
           paramReducer = null; // Don't apply paramReducer
-          searcherString = null; // Clear searcherString
           continue; // Retry with a new challenge
         }
         if (matchingCountries.length > 8) {
@@ -336,7 +332,7 @@ const App: React.FC = () => {
               ? `${challenge.slice(0, -1)} and ${addedText.join(" and ")}`
               : challenge}
           </h2>
-          {notHadFirstGuess ? (
+          {notHadFirstGuess === null ? (
             <p></p>
           ) : correctAnswer === true ? (
             <p>Correct Answer: Countries remaing = {answers.length}</p>
