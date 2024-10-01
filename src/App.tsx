@@ -171,11 +171,10 @@ const App: React.FC = () => {
   const [correctAnswerCount, setCorrectAnswerCount] = useState<number>(0); // Track correct answers
   const [notHadFirstGuess, setNotHadFirstGuess] = useState<boolean>(true);
 
-  // Fetch country data from the JSON file when the component mounts
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../public/countryData.json");
+        const response = await fetch("/countryData.json");
         if (!response.ok) throw new Error("Network response was not ok");
         const data = await response.json();
         setCountriesData(data);
