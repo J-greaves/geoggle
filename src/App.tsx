@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import crossImage from "../public/cross.png";
+import tickImage from "../public/tick.png";
+import winnerImage from "../public/winner.png";
 
-// Define a type for the country data structure
 interface CountryData {
   population: number;
   popDensity: number;
@@ -17,9 +19,9 @@ interface CountryData {
   isIrenaMember: boolean;
   isIccMember: boolean;
   isNonAlignedMember: boolean;
-  [key: string]: any; // This allows any additional string keys
+  [key: string]: any;
 }
-let paramReducer: string | null = null; // Initialize paramReducer as null
+let paramReducer: string | null = null;
 let searcherArray: string[] = [];
 
 const paramReducers: Array<string> = [
@@ -33,7 +35,6 @@ const paramReducers: Array<string> = [
   "isNonAlignedMember",
 ];
 
-// Define a type for challenge types
 type ChallengeType =
   | "exactLength"
   | "containVowel"
@@ -42,13 +43,11 @@ type ChallengeType =
   | "beginningLetter"
   | "membersOf";
 
-// Define a type for challenge objects
 interface Challenge {
   type: ChallengeType;
   description: string;
 }
 
-// Define the challenges array with proper type
 const challenges: Challenge[] = [
   {
     type: "exactLength",
@@ -76,11 +75,9 @@ const challenges: Challenge[] = [
   },
 ];
 
-// Helper function to get a random integer
 const getRandomInt = (min: number, max: number): number =>
   Math.floor(Math.random() * (max - min + 1)) + min;
 
-// Helper function to get a random vowel
 const getRandomVowel = (): string =>
   ["a", "e", "i", "o", "u"][Math.floor(Math.random() * 5)];
 
@@ -89,17 +86,15 @@ function getRandomParamReducer(): string {
   return paramReducers[randomIndex];
 }
 
-// Helper function to get a random letter
 const getRandomLetter = (): string =>
   String.fromCharCode(getRandomInt(65, 90)).toLowerCase();
 
-// Define the function to check the challenge and return the matching countries
 function checkChallenge(
   challenge: Challenge,
   countriesData: Record<string, CountryData>
 ): { answers: string[]; replacementValue: string | number | null } {
   const answers: string[] = [];
-  let replacementValue: string | number | null = null; // Declare the replacement value
+  let replacementValue: string | number | null = null;
 
   switch (challenge.type) {
     case "exactLength": {
@@ -153,7 +148,7 @@ function checkChallenge(
     default:
       return { answers: [], replacementValue: null };
   }
-  return { answers, replacementValue }; // Return answers and the replacement value
+  return { answers, replacementValue };
 }
 
 const App: React.FC = () => {
@@ -164,11 +159,9 @@ const App: React.FC = () => {
   const [challenge, setChallenge] = useState<string | null>(null);
   const [answers, setAnswers] = useState<string[]>([]);
   const [correctAnswer, setCorrectAnswer] = useState<boolean | null>(null);
-  const [answersImage, setAnswersImage] = useState<string>(
-    "../public/cross.png"
-  );
+  const [answersImage, setAnswersImage] = useState<string>(crossImage);
   const [numberOfAnswers, setNumberOfAnswers] = useState<number>(0);
-  const [correctAnswerCount, setCorrectAnswerCount] = useState<number>(0); // Track correct answers
+  const [correctAnswerCount, setCorrectAnswerCount] = useState<number>(0);
   const [notHadFirstGuess, setNotHadFirstGuess] = useState<boolean>(true);
 
   useEffect(() => {
@@ -190,10 +183,10 @@ const App: React.FC = () => {
     setNotHadFirstGuess(true);
     let validChallenge: Challenge | null = null;
     let matchingCountries: string[] = [];
-    paramReducer = null; // Reset paramReducer before generating a new challenge
+    paramReducer = null;
     setCorrectAnswerCount(0);
 
-    const maxAttempts = 100; // Limit to avoid infinite loop
+    const maxAttempts = 100;
 
     let attempt = 0;
     do {
@@ -201,10 +194,9 @@ const App: React.FC = () => {
       paramReducer = null;
       if (attempt >= maxAttempts) {
         console.warn("Max attempts reached, no valid challenge found.");
-        return; // Prevents infinite loop
+        return;
       }
 
-      // Choose a random core challenge
       const randomChallenge =
         challenges[getRandomInt(0, challenges.length - 1)];
       const { answers, replacementValue } = checkChallenge(
@@ -212,57 +204,52 @@ const App: React.FC = () => {
         countriesData
       );
 
-      // Start with the matching countries from the core challenge
       matchingCountries = answers;
 
-      // Only apply paramReducer if there are more than 8 countries
       if (matchingCountries.length > 8) {
-        paramReducer = getRandomParamReducer(); // Get a random param reducer
+        paramReducer = getRandomParamReducer();
         let searcher: string;
         if (paramReducer) {
           searcher = paramReducer;
           searcherArray.push(searcher);
         }
-        // Apply the paramReducer to filter countries
+
         matchingCountries = matchingCountries.filter((country) => {
-          return countriesData[country][searcher] === true; // Keep countries that meet the additional condition
+          return countriesData[country][searcher] === true;
         });
 
-        // If after applying paramReducer we get fewer than 2 countries, reset and retry
         if (matchingCountries.length < 2) {
-          paramReducer = null; // Don't apply paramReducer
-          continue; // Retry with a new challenge
+          paramReducer = null;
+          continue;
         }
         if (matchingCountries.length > 8) {
-          paramReducer = getRandomParamReducer(); // Get a random param reducer
+          paramReducer = getRandomParamReducer();
           let searcher: string;
           if (paramReducer) {
             searcher = paramReducer;
             searcherArray.push(searcher);
           }
           matchingCountries = matchingCountries.filter((country) => {
-            return countriesData[country][searcher] === true; // Keep countries that meet the additional condition
+            return countriesData[country][searcher] === true;
           });
         }
       }
 
-      // Ensure the final result is between 2 and 8 countries
       if (matchingCountries.length >= 2 && matchingCountries.length <= 8) {
         validChallenge = randomChallenge;
 
-        // Ensure we replace X and * with the latest values
         if (validChallenge) {
           const challengeDescription = validChallenge.description
             .replace("X", matchingCountries.length.toString())
-            .replace("*", String(replacementValue).toUpperCase()); // Replacing '*' with the criteria
+            .replace("*", String(replacementValue).toUpperCase());
 
-          setChallenge(challengeDescription); // Set the challenge
-          setAnswers(matchingCountries); // Set the answers
+          setChallenge(challengeDescription);
+          setAnswers(matchingCountries);
         }
       }
       setNumberOfAnswers(matchingCountries.length);
       attempt++;
-    } while (!validChallenge); // Continue until we find a valid challenge
+    } while (!validChallenge);
   };
 
   const addedText: string[] = [];
@@ -300,11 +287,11 @@ const App: React.FC = () => {
 
     if (answers.includes(input)) {
       setCorrectAnswer(true);
-      setCorrectAnswerCount((prev) => prev + 1); // Increment correct answer count
+      setCorrectAnswerCount((prev) => prev + 1);
       const updatedAnswers = answers.filter((answer) => answer !== input);
       setAnswers(updatedAnswers);
     } else {
-      setAnswersImage("../public/cross.png"); // Only change this if needed
+      setAnswersImage(crossImage);
       setCorrectAnswer(false);
     }
     event.currentTarget.querySelector("input").value = "";
@@ -313,7 +300,7 @@ const App: React.FC = () => {
   return (
     <div
       style={{
-        height: "100vh", // Ensure it takes the full height of the viewport
+        height: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -331,13 +318,13 @@ const App: React.FC = () => {
               ? `${challenge.slice(0, -1)} and ${addedText.join(" and ")}`
               : challenge}
           </h2>
-          {notHadFirstGuess === null ? (
-            <p></p>
+          {notHadFirstGuess ? (
+            <p>Make your guess!</p>
           ) : correctAnswer === true ? (
-            <p>Correct Answer: Countries remaing = {answers.length}</p>
-          ) : (
-            <p>Incorrect Answer: Countries remaing = {answers.length}</p>
-          )}
+            <p>Correct Answer: Countries remaining = {answers.length}</p>
+          ) : correctAnswer === false ? (
+            <p>Incorrect Answer: Countries remaining = {answers.length}</p>
+          ) : null}
           {answers.length > 0 ? (
             <form onSubmit={handleSubmit}>
               <input type="text"></input>
@@ -348,9 +335,7 @@ const App: React.FC = () => {
             {Array.from({ length: numberOfAnswers }).map((_, i) => (
               <img
                 key={i}
-                src={
-                  i < correctAnswerCount ? "../public/tick.png" : answersImage
-                } // Change based on correct answers
+                src={i < correctAnswerCount ? tickImage : answersImage}
                 style={{ width: "10vw", margin: "1rem" }}
                 alt={`Answer icon ${i + 1}`}
               />
@@ -359,7 +344,7 @@ const App: React.FC = () => {
           <div>
             {answers.length === 0 ? (
               <p>
-                <img src="../public/winner.png"></img>
+                <img src={winnerImage}></img>
               </p>
             ) : null}
           </div>
