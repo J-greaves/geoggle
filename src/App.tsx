@@ -314,9 +314,9 @@ const App: React.FC = () => {
       </h1>
       <button
         onClick={generateChallenge}
-        style={{ width: "10vw", alignSelf: "center" }}
+        style={{ width: "10vw", minWidth: "100px", alignSelf: "center" }}
       >
-        Generate Today's Challenge
+        Generate a Challenge
       </button>
       {challenge && (
         <>
