@@ -314,7 +314,12 @@ const App: React.FC = () => {
       </h1>
       <button
         onClick={generateChallenge}
-        style={{ width: "10vw", minWidth: "100px", alignSelf: "center" }}
+        style={{
+          width: "10vw",
+          minWidth: "120px",
+          alignSelf: "center",
+          textAlign: "center",
+        }}
       >
         Generate a Challenge
       </button>
