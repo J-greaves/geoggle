@@ -13,7 +13,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Albania": {
@@ -30,7 +30,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Algeria": {
@@ -64,7 +64,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Angola": {
@@ -98,7 +98,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Argentina": {
@@ -115,7 +115,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Armenia": {
@@ -149,7 +149,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Austria": {
@@ -166,7 +166,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Azerbaijan": {
@@ -234,7 +234,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Belarus": {
@@ -268,7 +268,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Belize": {
@@ -285,7 +285,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Benin": {
@@ -302,7 +302,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Bhutan": {
@@ -336,7 +336,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Bosnia and Herzegovina": {
@@ -353,7 +353,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": true,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Botswana": {
@@ -370,7 +370,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Brazil": {
@@ -387,7 +387,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Brunei": {
@@ -421,7 +421,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Burkina Faso": {
@@ -438,7 +438,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Burundi": {
@@ -458,7 +458,7 @@
     "isIccMember": false,
     "isNonAlignedMember": true
   },
-  "Cabo Verde": {
+  "Cape Verde": {
     "population": 555987,
     "popDensity": 138,
     "GDP": 2.02,
@@ -472,7 +472,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Cambodia": {
@@ -489,7 +489,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Cameroon": {
@@ -540,7 +540,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Chad": {
@@ -557,7 +557,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Chile": {
@@ -574,7 +574,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "China": {
@@ -625,7 +625,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": true,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Congo": {
@@ -642,7 +642,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Costa Rica": {
@@ -676,7 +676,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Cuba": {
@@ -710,7 +710,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Czech Republic": {
@@ -727,7 +727,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Democratic Republic of the Congo": {
@@ -744,7 +744,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Denmark": {
@@ -761,7 +761,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Djibouti": {
@@ -778,7 +778,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Dominica": {
@@ -795,7 +795,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Dominican Republic": {
@@ -812,7 +812,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Ecuador": {
@@ -829,7 +829,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Egypt": {
@@ -914,7 +914,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Eswatini": {
@@ -982,7 +982,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Finland": {
@@ -999,7 +999,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "France": {
@@ -1016,7 +1016,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "French Polynesia": {
@@ -1050,7 +1050,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Gambia": {
@@ -1067,7 +1067,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Georgia": {
@@ -1084,7 +1084,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Germany": {
@@ -1101,7 +1101,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Ghana": {
@@ -1118,7 +1118,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Greece": {
@@ -1135,7 +1135,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Greenland": {
@@ -1186,7 +1186,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Guinea": {
@@ -1203,7 +1203,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Guinea-Bissau": {
@@ -1237,7 +1237,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Haiti": {
@@ -1271,7 +1271,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Hungary": {
@@ -1288,7 +1288,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Iceland": {
@@ -1305,7 +1305,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "India": {
@@ -1390,7 +1390,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Israel": {
@@ -1424,7 +1424,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Jamaica": {
@@ -1475,7 +1475,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Kazakhstan": {
@@ -1594,7 +1594,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Lebanon": {
@@ -1628,7 +1628,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Liberia": {
@@ -1645,7 +1645,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Libya": {
@@ -1679,7 +1679,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Madagascar": {
@@ -1696,7 +1696,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Malawi": {
@@ -1713,7 +1713,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Malaysia": {
@@ -1730,7 +1730,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Maldives": {
@@ -1747,7 +1747,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Mali": {
@@ -1764,7 +1764,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Malta": {
@@ -1781,7 +1781,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Marshall Islands": {
@@ -1798,7 +1798,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Mauritania": {
@@ -1832,7 +1832,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Mexico": {
@@ -1849,7 +1849,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Micronesia": {
@@ -1883,7 +1883,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Monaco": {
@@ -1917,7 +1917,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Montenegro": {
@@ -1934,7 +1934,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Morocco": {
@@ -1971,7 +1971,7 @@
     "isIccMember": false,
     "isNonAlignedMember": true
   },
-  "Myanmar": {
+  "Burma": {
     "population": 54890593,
     "popDensity": 83,
     "GDP": 78.71,
@@ -2002,7 +2002,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Nauru": {
@@ -2019,7 +2019,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Nepal": {
@@ -2053,7 +2053,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "New Caledonia": {
@@ -2087,7 +2087,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Nicaragua": {
@@ -2121,7 +2121,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Nigeria": {
@@ -2138,7 +2138,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "North Macedonia": {
@@ -2189,7 +2189,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Oman": {
@@ -2257,7 +2257,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Papua New Guinea": {
@@ -2291,7 +2291,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Peru": {
@@ -2308,7 +2308,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Philippines": {
@@ -2342,7 +2342,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Portugal": {
@@ -2359,7 +2359,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Puerto Rico": {
@@ -2410,7 +2410,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Russian Federation": {
@@ -2462,7 +2462,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "San Marino": {
@@ -2479,7 +2479,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Sao Tome and Principe": {
@@ -2530,7 +2530,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Serbia": {
@@ -2547,7 +2547,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Seychelles": {
@@ -2564,7 +2564,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Sierra Leone": {
@@ -2581,7 +2581,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Singapore": {
@@ -2601,24 +2601,7 @@
     "isIccMember": false,
     "isNonAlignedMember": false
   },
-  "Sint Maarten (Dutch part)": {
-    "population": 42540,
-    "popDensity": 1035,
-    "GDP": 0.13,
-    "continent": "North America",
-    "firstLanguage": "Dutch",
-    "isLandlocked": false,
-    "isUnMember": false,
-    "isCommonwealthMember": false,
-    "isEuMember": false,
-    "isNatoMember": false,
-    "isAfricanUnionMember": false,
-    "isIslamicCooperationMember": false,
-    "isIrenaMember": false,
-    "isIccMember": false,
-    "isNonAlignedMember": false
-  },
-  "Slovak Republic": {
+  "Slovakia": {
     "population": 5456362,
     "popDensity": 112,
     "GDP": 112.22,
@@ -2649,7 +2632,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Solomon Islands": {
@@ -2700,7 +2683,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "South Sudan": {
@@ -2734,7 +2717,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Sri Lanka": {
@@ -2768,7 +2751,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "St. Lucia": {
@@ -2785,24 +2768,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
-    "isNonAlignedMember": false
-  },
-  "St. Martin (French part)": {
-    "population": 38660,
-    "popDensity": 1535,
-    "GDP": 0.61,
-    "continent": "North America",
-    "firstLanguage": "French",
-    "isLandlocked": false,
-    "isUnMember": false,
-    "isCommonwealthMember": false,
-    "isEuMember": false,
-    "isNatoMember": false,
-    "isAfricanUnionMember": false,
-    "isIslamicCooperationMember": false,
-    "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "St. Vincent and the Grenadines": {
@@ -2819,7 +2785,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Sudan": {
@@ -2853,7 +2819,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Sweden": {
@@ -2870,7 +2836,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Switzerland": {
@@ -2887,10 +2853,10 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
-  "Syrian Arab Republic": {
+  "Syria": {
     "population": 17500658,
     "popDensity": 100,
     "GDP": 13.13,
@@ -2921,7 +2887,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Tanzania": {
@@ -2938,7 +2904,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Thailand": {
@@ -2972,7 +2938,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Togo": {
@@ -3023,7 +2989,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
   "Tunisia": {
@@ -3040,7 +3006,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Turkiye": {
@@ -3125,7 +3091,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Ukraine": {
@@ -3210,7 +3176,7 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Uzbekistan": {
@@ -3244,10 +3210,10 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": false
   },
-  "Venezuela, RB": {
+  "Venezuela": {
     "population": 28435943,
     "popDensity": 32,
     "GDP": 48.21,
@@ -3261,10 +3227,10 @@
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
-  "Viet Nam": {
+  "Vietnam": {
     "population": 97338579,
     "popDensity": 313,
     "GDP": 343.59,
@@ -3281,7 +3247,7 @@
     "isIccMember": false,
     "isNonAlignedMember": false
   },
-  "Virgin Islands (U.S.)": {
+  "Virgin Islands": {
     "population": 106000,
     "popDensity": 350,
     "GDP": 4.03,
@@ -3298,24 +3264,7 @@
     "isIccMember": false,
     "isNonAlignedMember": false
   },
-  "West Bank and Gaza": {
-    "population": 2982000,
-    "popDensity": 849,
-    "GDP": 15.28,
-    "continent": "Asia",
-    "firstLanguage": "Arabic",
-    "isLandlocked": false,
-    "isUnMember": false,
-    "isCommonwealthMember": false,
-    "isEuMember": false,
-    "isNatoMember": false,
-    "isAfricanUnionMember": false,
-    "isIslamicCooperationMember": false,
-    "isIrenaMember": false,
-    "isIccMember": false,
-    "isNonAlignedMember": false
-  },
-  "Yemen, Rep.": {
+  "Yemen": {
     "population": 29825968,
     "popDensity": 58,
     "GDP": 22.67,
@@ -3346,7 +3295,7 @@
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
-    "isIccMember": false,
+    "isIccMember": true,
     "isNonAlignedMember": true
   },
   "Zimbabwe": {

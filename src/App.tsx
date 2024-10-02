@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import crossImage from "../public/cross.png";
 import tickImage from "../public/tick.png";
 import winnerImage from "../public/winner.png";
+import logo from "../public/logo.png";
 
 interface CountryData {
   population: number;
@@ -303,22 +304,30 @@ const App: React.FC = () => {
         height: "100vh",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
         padding: "50px",
       }}
     >
-      <h1>Geography Game</h1>
-      <button onClick={generateChallenge}>Generate Today's Challenge</button>
+      <h1>
+        <img src={logo}></img>
+      </h1>
+      <button
+        onClick={generateChallenge}
+        style={{ width: "10vw", alignSelf: "center" }}
+      >
+        Generate Today's Challenge
+      </button>
       {challenge && (
         <>
           <h2>
-            {addedText.length > 0
+            {answers.length === 0
+              ? null
+              : addedText.length > 0
               ? `${challenge.slice(0, -1)} and ${addedText.join(" and ")}`
               : challenge}
           </h2>
-          {notHadFirstGuess ? (
+          {answers.length === 0 ? null : notHadFirstGuess ? (
             <p>Make your guess!</p>
           ) : correctAnswer === true ? (
             <p>Correct Answer: Countries remaining = {answers.length}</p>
@@ -331,16 +340,18 @@ const App: React.FC = () => {
               <button type="submit">Submit</button>
             </form>
           ) : null}
-          <p>
-            {Array.from({ length: numberOfAnswers }).map((_, i) => (
-              <img
-                key={i}
-                src={i < correctAnswerCount ? tickImage : answersImage}
-                style={{ width: "10vw", margin: "1rem" }}
-                alt={`Answer icon ${i + 1}`}
-              />
-            ))}
-          </p>
+          {answers.length === 0 ? null : (
+            <p>
+              {Array.from({ length: numberOfAnswers }).map((_, i) => (
+                <img
+                  key={i}
+                  src={i < correctAnswerCount ? tickImage : answersImage}
+                  style={{ width: "8vw", minWidth: "60px", margin: "1rem" }}
+                  alt={`Answer icon ${i + 1}`}
+                />
+              ))}
+            </p>
+          )}
           <div>
             {answers.length === 0 ? (
               <p>
