@@ -9,7 +9,7 @@
     "isUnMember": true,
     "isCommonwealthMember": false,
     "isEuMember": false,
-    "isNatoMember": true,
+    "isNatoMember": false,
     "isAfricanUnionMember": false,
     "isIslamicCooperationMember": true,
     "isIrenaMember": false,
@@ -371,7 +371,7 @@
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
     "isIccMember": true,
-    "isNonAlignedMember": false
+    "isNonAlignedMember": true
   },
   "Brazil": {
     "population": 213993437,
@@ -432,7 +432,7 @@
     "firstLanguage": "French",
     "isLandlocked": true,
     "isUnMember": true,
-    "isCommonwealthMember": true,
+    "isCommonwealthMember": false,
     "isEuMember": false,
     "isNatoMember": false,
     "isAfricanUnionMember": true,
@@ -473,7 +473,7 @@
     "isIslamicCooperationMember": false,
     "isIrenaMember": true,
     "isIccMember": true,
-    "isNonAlignedMember": false
+    "isNonAlignedMember": true
   },
   "Cambodia": {
     "population": 16718971,
@@ -1044,7 +1044,7 @@
     "firstLanguage": "French",
     "isLandlocked": false,
     "isUnMember": true,
-    "isCommonwealthMember": false,
+    "isCommonwealthMember": true,
     "isEuMember": false,
     "isNatoMember": false,
     "isAfricanUnionMember": true,
@@ -1622,14 +1622,14 @@
     "firstLanguage": "Sesotho",
     "isLandlocked": true,
     "isUnMember": true,
-    "isCommonwealthMember": false,
+    "isCommonwealthMember": true,
     "isEuMember": false,
     "isNatoMember": false,
     "isAfricanUnionMember": true,
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
     "isIccMember": true,
-    "isNonAlignedMember": false
+    "isNonAlignedMember": true
   },
   "Liberia": {
     "population": 5057681,
@@ -1962,7 +1962,7 @@
     "firstLanguage": "Portuguese",
     "isLandlocked": false,
     "isUnMember": true,
-    "isCommonwealthMember": false,
+    "isCommonwealthMember": true,
     "isEuMember": false,
     "isNatoMember": false,
     "isAfricanUnionMember": true,
@@ -2013,7 +2013,7 @@
     "firstLanguage": "Nauruan",
     "isLandlocked": false,
     "isUnMember": true,
-    "isCommonwealthMember": false,
+    "isCommonwealthMember": true,
     "isEuMember": false,
     "isNatoMember": false,
     "isAfricanUnionMember": false,
@@ -2413,7 +2413,7 @@
     "isIccMember": true,
     "isNonAlignedMember": false
   },
-  "Russian Federation": {
+  "Russia": {
     "population": 145912025,
     "popDensity": 9,
     "GDP": 1778.66,
@@ -2582,7 +2582,7 @@
     "isIslamicCooperationMember": false,
     "isIrenaMember": false,
     "isIccMember": true,
-    "isNonAlignedMember": false
+    "isNonAlignedMember": true
   },
   "Singapore": {
     "population": 5850342,
@@ -2624,7 +2624,7 @@
     "GDP": 53.87,
     "continent": "Europe",
     "firstLanguage": "Slovene",
-    "isLandlocked": true,
+    "isLandlocked": false,
     "isUnMember": true,
     "isCommonwealthMember": false,
     "isEuMember": true,

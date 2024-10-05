@@ -87,8 +87,7 @@ function getRandomParamReducer(): string {
   return paramReducers[randomIndex];
 }
 
-const getRandomLetter = (): string =>
-  String.fromCharCode(getRandomInt(65, 90)).toLowerCase();
+const getRandomLetter = (): string => String.fromCharCode(getRandomInt(65, 90));
 
 function checkChallenge(
   challenge: Challenge,
@@ -100,6 +99,7 @@ function checkChallenge(
   switch (challenge.type) {
     case "exactLength": {
       replacementValue = getRandomInt(3, 10);
+      console.log(replacementValue, "<--random int - exact length");
       for (const country in countriesData) {
         if (country.length === replacementValue) {
           answers.push(country);
@@ -109,6 +109,7 @@ function checkChallenge(
     }
     case "containVowel": {
       replacementValue = getRandomVowel();
+      console.log(replacementValue, "random vowel - contain vowel");
       for (const country in countriesData) {
         if (country.toLowerCase().includes(replacementValue)) {
           answers.push(country);
@@ -118,6 +119,7 @@ function checkChallenge(
     }
     case "singleOccurrenceVowel": {
       replacementValue = getRandomVowel();
+      console.log(replacementValue, "random vowel - single occur vowel");
       for (const country in countriesData) {
         const regex = new RegExp(
           `^([^${replacementValue}]*)(${replacementValue})([^${replacementValue}]*$)`
@@ -130,8 +132,9 @@ function checkChallenge(
     }
     case "endingLetter": {
       replacementValue = getRandomLetter();
+      console.log(replacementValue, "random letter - ending with");
       for (const country in countriesData) {
-        if (country.toLowerCase().endsWith(replacementValue)) {
+        if (country.endsWith(replacementValue)) {
           answers.push(country);
         }
       }
@@ -139,8 +142,9 @@ function checkChallenge(
     }
     case "beginningLetter": {
       replacementValue = getRandomLetter();
+      console.log(replacementValue, "random letter - beginning with");
       for (const country in countriesData) {
-        if (country.toLowerCase().startsWith(replacementValue)) {
+        if (country.startsWith(replacementValue)) {
           answers.push(country);
         }
       }
@@ -149,6 +153,12 @@ function checkChallenge(
     default:
       return { answers: [], replacementValue: null };
   }
+  console.log(
+    answers,
+    "<--answers end of checkChallenge",
+    replacementValue,
+    "<-- replacement value end of check chal"
+  );
   return { answers, replacementValue };
 }
 
@@ -181,6 +191,8 @@ const App: React.FC = () => {
   }, []);
 
   const generateChallenge = (): void => {
+    document.getElementById("countriesList").style.display = "none";
+    document.getElementById("answersText").style.display = "none";
     setNotHadFirstGuess(true);
     let validChallenge: Challenge | null = null;
     let matchingCountries: string[] = [];
@@ -191,6 +203,7 @@ const App: React.FC = () => {
 
     let attempt = 0;
     do {
+      console.log(attempt, "<---attempt");
       searcherArray = [];
       paramReducer = null;
       if (attempt >= maxAttempts) {
@@ -200,14 +213,24 @@ const App: React.FC = () => {
 
       const randomChallenge =
         challenges[getRandomInt(0, challenges.length - 1)];
+
+      console.log(randomChallenge, "<--- random challenge");
+
       const { answers, replacementValue } = checkChallenge(
         randomChallenge,
         countriesData
       );
 
       matchingCountries = answers;
+      console.log(
+        matchingCountries,
+        "<--matching countries, no params",
+        randomChallenge,
+        "rando challange no params"
+      );
 
       if (matchingCountries.length > 8) {
+        console.log("countries more than 8");
         paramReducer = getRandomParamReducer();
         let searcher: string;
         if (paramReducer) {
@@ -218,6 +241,17 @@ const App: React.FC = () => {
         matchingCountries = matchingCountries.filter((country) => {
           return countriesData[country][searcher] === true;
         });
+
+        console.log(
+          matchingCountries,
+          "matching countries with param reducer > 8",
+          randomChallenge,
+          "<--rando Chall > 8",
+          replacementValue,
+          "replacement val > 8",
+          paramReducer,
+          "param reducer > 8"
+        );
 
         if (matchingCountries.length < 2) {
           paramReducer = null;
@@ -233,6 +267,13 @@ const App: React.FC = () => {
           matchingCountries = matchingCountries.filter((country) => {
             return countriesData[country][searcher] === true;
           });
+          console.log(
+            "countries more than 8 twice",
+            paramReducer,
+            "<--param reducer 2",
+            matchingCountries,
+            "<---- matching countries 2"
+          );
         }
       }
 
@@ -260,22 +301,29 @@ const App: React.FC = () => {
       addedText.push("are Landlocked");
     }
     if (searcher === "isIccMember") {
-      addedText.push("are members of the International Criminal Court");
+      addedText.push("are members of the International Criminal Court (ICC)");
     }
     if (searcher === "isCommonwealthMember") {
       addedText.push("are members of The Commonwealth");
     }
     if (searcher === "isEuMember") {
-      addedText.push("are members of The European Union");
+      addedText.push("are members of The European Union (EU)");
     }
     if (searcher === "isIslamicCooperationMember") {
-      addedText.push("are members of The Non-Aligned Movement");
+      addedText.push("are members of The Non-Aligned Movement(NAM)");
     }
     if (searcher === "isAfricanUnionMember") {
       addedText.push("are members of The African Union");
     }
     if (searcher === "isNatoMember") {
-      addedText.push("are members of The North Atlantic Treaty Organization");
+      addedText.push(
+        "are members of The North Atlantic Treaty Organization (NATO)"
+      );
+    }
+    if (searcher === "isIslamicCooperationMember") {
+      addedText.push(
+        "are members of Organisation of Islamic Cooperation (OIC)"
+      );
     }
     if (searcher === " and ") {
       addedText.push(" and ");
@@ -298,15 +346,46 @@ const App: React.FC = () => {
     event.currentTarget.querySelector("input").value = "";
     console.log(answers);
   };
+
+  let countryList = "<ul>";
+  for (const country in countriesData) {
+    countryList += "<li>" + country + "</li>";
+  }
+  countryList += "</ul>";
+
+  function showAnswers() {
+    const text = document.getElementById("answersText");
+
+    // Display only the correct answers
+    if (text.style.display === "none") {
+      text.style.display = "block";
+      text.innerHTML = `
+        <ul>
+          ${answers.map((answer) => `<li>${answer}</li>`).join("")}
+        </ul>
+      `;
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function showCountries() {
+    const text = document.getElementById("countriesList");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+
+    text.innerHTML = countryList;
+  }
   return (
     <div
       style={{
-        height: "100vh",
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
         textAlign: "center",
-        padding: "50px",
       }}
     >
       <h1>
@@ -315,6 +394,7 @@ const App: React.FC = () => {
       <button
         onClick={generateChallenge}
         style={{
+          marginTop: "1rem",
           width: "10vw",
           minWidth: "120px",
           alignSelf: "center",
@@ -360,9 +440,29 @@ const App: React.FC = () => {
           <div>
             {answers.length === 0 ? (
               <p>
-                <img src={winnerImage}></img>
+                <img src={winnerImage} style={{ maxHeight: "25vh" }}></img>
               </p>
             ) : null}
+          </div>
+          <div>
+            <h2 style={{ textDecoration: "underline" }}>Stuck?</h2>
+            <button onClick={showAnswers} style={{ margin: "1rem" }}>
+              Show Answers
+            </button>
+            <button onClick={showCountries} style={{ margin: "1rem" }}>
+              Show Country List
+            </button>
+            <p id="answersText" style={{ display: "none" }}>
+              <ul>
+                {answers.map((answer) => {
+                  return <li>{answer}</li>;
+                })}
+              </ul>
+            </p>
+            <p
+              id="countriesList"
+              style={{ display: "none", maxHeight: "300px", overflowY: "auto" }}
+            ></p>
           </div>
         </>
       )}
