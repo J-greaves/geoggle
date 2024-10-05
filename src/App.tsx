@@ -191,8 +191,15 @@ const App: React.FC = () => {
   }, []);
 
   const generateChallenge = (): void => {
-    document.getElementById("countriesList").style.display = "none";
-    document.getElementById("answersText").style.display = "none";
+    const countriesListElement = document.getElementById("countriesList");
+    if (countriesListElement) {
+      countriesListElement.style.display = "none";
+    }
+
+    const answersTextElement = document.getElementById("answersText");
+    if (answersTextElement) {
+      answersTextElement.style.display = "none";
+    }
     setNotHadFirstGuess(true);
     let validChallenge: Challenge | null = null;
     let matchingCountries: string[] = [];
@@ -356,28 +363,31 @@ const App: React.FC = () => {
   function showAnswers() {
     const text = document.getElementById("answersText");
 
-    // Display only the correct answers
-    if (text.style.display === "none") {
-      text.style.display = "block";
-      text.innerHTML = `
+    if (text) {
+      if (text.style.display === "none") {
+        text.style.display = "block";
+        text.innerHTML = `
         <ul>
           ${answers.map((answer) => `<li>${answer}</li>`).join("")}
         </ul>
       `;
-    } else {
-      text.style.display = "none";
+      } else {
+        text.style.display = "none";
+      }
     }
   }
 
   function showCountries() {
     const text = document.getElementById("countriesList");
-    if (text.style.display === "none") {
-      text.style.display = "block";
-    } else {
-      text.style.display = "none";
-    }
+    if (text) {
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
 
-    text.innerHTML = countryList;
+      text.innerHTML = countryList;
+    }
   }
   return (
     <div
